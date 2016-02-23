@@ -1,23 +1,33 @@
 {
   "name": "gulp-packer50x",
-  "version": "0.0.1",
+  "version": "1.0.4",
   "description": "Obfuscate JavasScript via packer.50x.eu. Please DO NOT include any sensitive data.",
-  "email": "noitidart@gmail.com",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/noitidart/gulp-packer50x.git"
+  },
   "keywords": [
-	"gulp",
-    "gulpplugin",
-	"obfuscate",
-	"obfuscator",
-	"pack"
+    "javascript",
+    "js",
+    "pack",
+    "packer",
+    "obfuscate",
+    "min",
+    "minify"
   ],
-  "author": {
-    "name": "Noitidart",
-    "email": "noitidart@gmail.com"
+  "author": "Noitidart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noitidart/gulp-packer50x/issues"
   },
+  "homepage": "https://github.com/noitidart/gulp-packer50x#readme",
   "dependencies": {
-    "through2": "*"
-  },
-  "license": "MIT",
-  "readme": "# gulp-javascriptobfuscator\r\n\r\nObfuscate JavasScript via javascriptobfuscator.com. Please DO NOT include any sensitive data.\r\n\r\nInstallation\r\n----\r\n    npm install gulp-javascriptobfuscator\r\nUsage\r\n====\r\n<pre><code>\r\nvar javascriptobfuscator = require('gulp-javascriptobfuscator');\r\n\r\ngulp.task('scripts', function() {\r\n    gulp.src('./lib/*.js')\r\n    .pipe(javascriptobfuscator({\r\n        encodeString: true, // (Optional - default: true)\r\n        encodeNumber: true, // (Optional - default: true)\r\n        replaceNames: true, // (Optional - default: true)\r\n        moveString: true,   // (Optional - default: true)\r\n        exclusions: [\"^_get_\", \"^_set_\", \"^_mtd_\"] // (Optional)\r\n    }))\r\n    .pipe(gulp.dest('./dist/'));\r\n});\r\n</code></pre>\r\n\r\n# License\r\n\r\nMIT\r\n"
+    "http": "0.0.0",
+    "querystring": "^0.2.0",
+    "through2": "^2.0.1"
+  }
 }
