@@ -1,6 +1,6 @@
 {
   "name": "gulp-packer50x",
-  "version": "1.0.4",
+  "version": "1.0.33",
   "description": "Obfuscate JavasScript via packer.50x.eu. Please DO NOT include any sensitive data.",
   "main": "index.js",
   "scripts": {
