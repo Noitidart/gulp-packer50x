@@ -1,6 +1,6 @@
 {
   "name": "gulp-packer50x",
-  "version": "1.0.33",
+  "version": "1.0.37",
   "description": "Obfuscate JavasScript via packer.50x.eu. Please DO NOT include any sensitive data.",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/noitidart/gulp-packer50x#readme",
   "dependencies": {
+    "gulp-util": "^3.0.7",
     "http": "0.0.0",
     "querystring": "^0.2.0",
     "through2": "^2.0.1"
