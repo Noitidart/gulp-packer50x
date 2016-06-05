@@ -10,15 +10,20 @@ Obfuscate JavasScript via http://packer.50x.eu. This submits the source to the w
 
 ## Usage
 <pre><code>
+// Include gulp
+var gulp = require('gulp');
+
+// Include Our Plugins
 var packer50x = require('gulp-packer50x');
 
-gulp.task('scripts', function() {
-    gulp.src('./lib/*.js')
-    .pipe(packer50x({
-        mode: "normal", // (Optional - default: "normal"; Possible Values - "none", "numeric", "normal", "extended")
-    }))
-    .pipe(gulp.dest('./dist/'));
+gulp.task('pack', function() {
+    return gulp.src('./lib/*.js')
+        .pipe(packer50x({ mode:'normal' }))
+        .pipe(gulp.dest('./dist/'));
 });
+
+// Default Task
+gulp.task('default', ['pack']);
 </code></pre>
 
 #### Options
