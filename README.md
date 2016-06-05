@@ -21,6 +21,14 @@ gulp.task('scripts', function() {
 });
 </code></pre>
 
+#### Options
+
+* **`mode`** - defaults to `normal`
+  * `none`
+  * `numeric`
+  * `normal`
+  * `extended`
+
 ## License
 
 ISC
