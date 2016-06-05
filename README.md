@@ -1,13 +1,14 @@
 # gulp-packer50x
 
-Obfuscate JavasScript via http://packer.50x.eu. Please DO NOT include any sensitive data.
+Obfuscate JavasScript via http://packer.50x.eu. This submits the source to the website and returns the result. Contents can be piped.
 
-Installation
-----
+## Change Log
+* **v1.0.60** - This is the first version that works. All prior versions will not work.
+
+## Installation
     npm install gulp-packer50x
 
-Usage
-====
+## Usage
 <pre><code>
 var packer50x = require('gulp-packer50x');
 
@@ -20,6 +21,6 @@ gulp.task('scripts', function() {
 });
 </code></pre>
 
-# License
+## License
 
 ISC
