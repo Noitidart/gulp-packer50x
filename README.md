@@ -3,6 +3,7 @@
 Obfuscate JavasScript via http://packer.50x.eu. This submits the source to the website and returns the result. Contents can be piped.
 
 ## Change Log
+* **v1.0.61** - Cleaned up some code.
 * **v1.0.60** - This is the first version that works. All prior versions will not work.
 
 ## Installation
